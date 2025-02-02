@@ -4,6 +4,9 @@
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
   text-align: center;
 }
 
@@ -17,11 +20,18 @@
 
 .header {
   background-color: #393f4d;
+  grid-column: 1 / span 2;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+}
+
+.menu ul,
+.nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .sidebar {
